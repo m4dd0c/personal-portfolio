@@ -1,27 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  box-sizing: border-box
+}
+.heading {
+  @apply text-9xl font-extrabold;
+}
+.heading-sm {
+  @apply text-7xl font-extrabold;
+}
+.lil-header {
+  @apply text-5xl font-bold my-10;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.img {
+  background: url("../public/assets/imgs/DejanHome.png") right no-repeat;
+  background-size: contain;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.red {
+  color: #ff0000;
 }
