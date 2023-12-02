@@ -15,7 +15,6 @@ const HomeLinks = ({ from, to }: HomeLinkInterface) => {
   const [isClicked, setIsClicked] = useState(false);
   const [isDesktopClient, setIsDesktopClient] = useState(true);
 
-
   // toggling isClicked as user clicks anywhere on page
   const toggleClick = () => setIsClicked((prevIsClicked) => !prevIsClicked);
 
@@ -32,7 +31,7 @@ const HomeLinks = ({ from, to }: HomeLinkInterface) => {
   }, [isDesktop]);
 
   return isDesktopClient ? (
-    <Link href={`/${to}`}>
+    <Link href={`/${to.toLowerCase()}`}>
       <motion.h1
         onMouseEnter={(e) => changeContentOnOver(to, e)}
         onMouseLeave={(e) => changeContentOnOver(from, e)}

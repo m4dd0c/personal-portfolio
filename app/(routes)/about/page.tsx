@@ -9,29 +9,27 @@ import MotionWrapper from "@/components/clientSide/MotionWrapper";
 const About = () => {
   return (
     <div className="bg-black text-white">
-      <HangingBtn/>
+      <HangingBtn />
       <BigHeader text="I design & build Digital Products" index={16} />
-      <Image src={aboutPic} alt="loading..." className="lg:h-auto lg:w-[80vw] object-cotain ml-auto mr-auto lg:mr-0" />
+      <Image
+        src={aboutPic}
+        alt="loading..."
+        className="lg:h-auto lg:w-[80vw] object-cotain ml-auto mr-auto lg:mr-0"
+      />
       {/* text content below */}
       <div className="lg:w-1/2 w-screen mx-auto my-36 leading-relaxed px-10">
-      <LilHeader text="About" />
+        <LilHeader text="About" />
 
         <p className="lg:text-2xl text-lg">
-          Hi, I’m Dejan. I'm a multi-talented human with over 10+ years of
-          experiences in wide range of design disciplines.
+          Hi, I'm Manish Suthar, also known as m4dd0x. I am an avid student with
+          almost 2 years of self-practice in various skills.
         </p>
-        <br />
         <br />
         <p>
-          You can also call me a product designer, experience designer,
-          interaction, UI, UX or by any other market defined function-title. I'm
-          also a multi-disciplinary maker with over 10 years of experiences in
-          wide range of design disciplines, manager, advisor, entrepreneur,
-          front-end developer, music enthusiast, traveler, photographer and
-          more.
+          As opposed to having multiple roles, I like to focus on honing my
+          developmental skills.
         </p>
         <br />
-    
         <p>
           I don’t like to define myself by the work I’ve done. I define myself
           by the work I want to do. Skills can be taught, personality is
@@ -40,34 +38,30 @@ const About = () => {
         </p>
         <br />
         <p>
-          Fueled by high energy levels and boundless enthusiasm, I’m easily
-          inspired and more then willing to follow my fascinations wherever they
-          take me. I’m passionate, expressive, multi-talented spirit with a
-          natural ability to entertain and inspire. I’m never satisfied to just
-          come up with ideas. Instead I have an almost impulsive need to act on
-          them.
+          I have a keen interest in technology, whether it’s working with PCs or
+          mobile devices, and I love playing chess and expressing my creativity
+          through drawings and sketches.. I’m a fast learner, able to pick up
+          new skills and juggle different projects and roles with relative ease.
         </p>
         <br />
         <p>
-          My abundant energy fuels me in the pursuit of many interests, hobbies,
-          areas of study and artistic endeavors. I’m a fast learner, able to
-          pick up new skills and juggle different projects and roles with
-          relative ease.
-        </p>
-        <br />
-        <p>
-          I like to develop expertise in a number of areas over the course of my
-          life and career. My personality type is{" "}
+          My motivation comes from an instinct that drives me inside and compels
+          me to learn and create. This inner strength pushes me to constantly
+          improve and develop, and I firmly believe that the process of doing
+          and learning enriches one’s character and intelligence. I mean I am an
           <a
-            className="underline text-color-white"
-            href="http://www.personalitypage.com/ENTJ.html"
+            href="https://www.16personalities.com/istj-personality"
             target="_blank"
           >
             {" "}
-            ENTJ
+            ISTJ-A
           </a>
-          . I currently work remotely with a selected freelance client base and
-          are open for new opportunities.
+          personality type.
+          <br />
+          Currently graduating with a Bachelor’s Degree in Computer Application,
+          I am simultaneously expanding my knowledge and skill set. I am open to
+          exploring new opportunities that align with my passion for learning
+          and creativity.
         </p>
         <br />
         <p>
