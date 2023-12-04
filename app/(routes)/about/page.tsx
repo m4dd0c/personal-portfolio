@@ -71,7 +71,6 @@ const About = () => {
         </p>
         <br />
         <br />
-
         <Link className="red font-semibold" href="/assets/resume/Dejan_Markovic_CV.pdf" target="_blank" locale={false}>
           <MotionWrapper>My resume (pdf 109kb)</MotionWrapper>
         </Link>
