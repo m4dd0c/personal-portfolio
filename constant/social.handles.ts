@@ -14,7 +14,7 @@ export const handles: HandlesInterface[] = [
     title: "Github",
   },
   {
-    link: "https://www.youtube.com/channel/UCRcKNykeg3pf6cvzZc9WEDA",
+    link: "https://www.youtube.com/@CodingWeeb-078",
     title: "Youtube",
   },
 ];

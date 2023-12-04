@@ -41,11 +41,9 @@ const Contact = () => {
             if (val.title === "E-mail") link = `mailto:${val.link}`;
             return (
               <li key={i}>
-                <MotionWrapper>
-                  <a href={link} className="red">
-                    {val.title}
-                  </a>
-                </MotionWrapper>
+                <a href={link} className="red">
+                  <MotionWrapper>{val.title}</MotionWrapper>
+                </a>
               </li>
             );
           })}
