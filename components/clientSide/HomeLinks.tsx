@@ -36,7 +36,7 @@ const HomeLinks = ({ from, to }: HomeLinkInterface) => {
         onMouseEnter={(e) => changeContentOnOver(to, e)}
         onMouseLeave={(e) => changeContentOnOver(from, e)}
         whileHover={hover.visible}
-        className={`lg:heading heading-sm ${
+        className={`heading ${
           to !== "About" ? "text-[#ff0000]" : "text-white"
         }`}
       >
@@ -46,7 +46,7 @@ const HomeLinks = ({ from, to }: HomeLinkInterface) => {
   ) : isClicked ? (
     <Link href={`/${to.toLowerCase()}`}>
       <h1
-        className={`lg:heading heading-sm ${
+        className={`heading-sm ${
           to !== "About" ? "text-[#ff0000]" : "text-white"
         }`}
       >
@@ -55,7 +55,7 @@ const HomeLinks = ({ from, to }: HomeLinkInterface) => {
     </Link>
   ) : (
     <h1
-      className={`lg:heading heading-sm ${
+      className={`heading-sm ${
         to !== "About" ? "text-[#ff0000]" : "text-white"
       }`}
     >

@@ -4,7 +4,7 @@ import MotionWrapper from "./clientSide/MotionWrapper";
 
 const WorkCard = ({ data }: { data: WorkDataInterface }) => {
   return (
-    <MotionWrapper>
+    <MotionWrapper px={35}>
       <div className="lg:my-20 my-10">
         <a href={data.link}>
           <h1 className="lg:text-8xl text-4xl tracking-wide font-bold">

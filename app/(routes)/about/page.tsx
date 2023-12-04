@@ -74,7 +74,7 @@ const About = () => {
         <MotionWrapper>
           <a
             className="red font-semibold"
-            href="../files/Dejan_Markovic_CV.pdf"
+            href="../../../public/assets/resume/Dejan_Markovic_CV.pdf"
             target="_blank"
           >
             My resume (pdf 109kb)
