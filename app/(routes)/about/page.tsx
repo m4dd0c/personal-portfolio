@@ -5,6 +5,7 @@ import aboutPic from "@/public/assets/imgs/Dejan.png";
 import BigHeader from "@/components/BigHeader";
 import HangingBtn from "@/components/HangingBtn";
 import MotionWrapper from "@/components/clientSide/MotionWrapper";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -71,15 +72,9 @@ const About = () => {
         <br />
         <br />
 
-        <MotionWrapper>
-          <a
-            className="red font-semibold"
-            href="../../../public/assets/resume/Dejan_Markovic_CV.pdf"
-            target="_blank"
-          >
-            My resume (pdf 109kb)
-          </a>
-        </MotionWrapper>
+        <Link className="red font-semibold" href="/assets/resume/Dejan_Markovic_CV.pdf" target="_blank" locale={false}>
+          <MotionWrapper>My resume (pdf 109kb)</MotionWrapper>
+        </Link>
       </div>
     </div>
   );
