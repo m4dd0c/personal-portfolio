@@ -71,15 +71,15 @@ const About = () => {
         <br />
         <br />
 
-        <MotionWrapper>
           <a
             className="red font-semibold"
             href="../../../public/assets/resume/Dejan_Markovic_CV.pdf"
             target="_blank"
           >
+        <MotionWrapper>
             My resume (pdf 109kb)
-          </a>
         </MotionWrapper>
+          </a>
       </div>
     </div>
   );
