@@ -1,3 +1,27 @@
-Preview: 
- https://m4dd0c.netlify.app
-Dejan Markovic Portfolio Clone with NextJS + TS
+﻿## Table of Contents
+
+- [Overview](#overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+
+## Overview
+
+- A Personal Portfolio made with love.
+- [live](https://m4dd0c.netlify.app/)
+
+## Installation
+
+1. Clone the repository
+   ``` git clone https://github.com/m4dd0c/personal-portfolio.git ```
+2. Install Dependencies
+   ``` npm i ```
+3. Start
+   ``` npm run dev ```
+
+## Technologies Used
+
+- [NextJS](#NextJS)
+- [Typescript](#Typescript)
+- [Framer Motion](#framer-motion)
+- [Tailwindcss](#tailwindcss)
