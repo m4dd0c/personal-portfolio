@@ -2,7 +2,6 @@
 
 - [Overview](#overview)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Technologies Used](#technologies-used)
 
 ## Overview
