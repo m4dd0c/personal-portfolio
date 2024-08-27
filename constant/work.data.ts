@@ -28,14 +28,14 @@ export const work: WorkDataInterface[] = [
   {
     id: "4",
     link: "https://github.com/m4dd0c/skull-movies",
-    title: "Skull-Movies (Mobile App)",
+    title: "SkullMovies",
     desc: "Discover movies and shows with ratings, cast info, and actor filmographies.",
   },
   {
     id: "5",
     link: "https://github.com/m4dd0c/skull-movies",
-    title: "Todo (Mobile App)",
-    desc: "An auth based todo-application with persistent data.",
+    title: "Todo",
+    desc: "An auth based todo mobile app with persistent data.",
   },
   {
     id: "6",
