@@ -6,7 +6,7 @@ const WorkCard = ({ data }: { data: WorkDataInterface }) => {
   return (
     <MotionWrapper px={35}>
       <div className="lg:my-20 my-10">
-        <a href={data.link}>
+        <a href={data.link} target="_blank">
           <h1 className="lg:text-8xl text-4xl tracking-wide font-bold">
             {data.title}
           </h1>

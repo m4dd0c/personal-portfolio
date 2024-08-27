@@ -22,8 +22,8 @@ const About = () => {
         <LilHeader text="About" />
 
         <p className="lg:text-2xl text-lg">
-          Hi, I'm Manish Suthar, also known as m4dd0x. I am an avid student with
-          almost 2 years of self-practice in various skills.
+          Hi, I'm Manish Suthar, alias as m4dd0c. I am an avid student with
+          almost 3 years of self-practice in various skills.
         </p>
         <br />
         <p>
@@ -71,8 +71,13 @@ const About = () => {
         </p>
         <br />
         <br />
-        <Link className="red font-semibold" href="/assets/resume/Dejan_Markovic_CV.pdf" target="_blank" locale={false}>
-          <MotionWrapper>My resume (pdf 109kb)</MotionWrapper>
+        <Link
+          className="red font-semibold"
+          href="/assets/resume/resume.pdf"
+          target="_blank"
+          locale={false}
+        >
+          <MotionWrapper>My resume (pdf 77kb)</MotionWrapper>
         </Link>
       </div>
     </div>

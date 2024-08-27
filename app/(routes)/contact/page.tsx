@@ -36,17 +36,14 @@ const Contact = () => {
         </p>
         <br />
         <ul className="leading-loose font-semibold">
-          {handles.map((val, i) => {
-            let link = val.link;
-            if (val.title === "E-mail") link = `mailto:${val.link}`;
-            return (
+          {handles.map((val, i) => (
               <li key={i}>
-                <a href={link} className="red">
+                <a href={val.link} title={val.link} className="red">
                   <MotionWrapper>{val.title}</MotionWrapper>
                 </a>
               </li>
-            );
-          })}
+            )
+          )}
         </ul>
       </div>
     </div>

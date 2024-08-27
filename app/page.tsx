@@ -8,7 +8,7 @@ export default function Home() {
       <HomeClient />
       <div className="h-screen img">
         <div className="lg:w-3/5 w-full h-screen grid place-items-center">
-          <div>
+          <div className="lg:w-[45%]">
             <div><HomeLinks from="Hello." to="About" /></div>
             <div className="mt-4">
               <HomeLinks from="I am" to="Work" />

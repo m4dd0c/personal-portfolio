@@ -3,7 +3,7 @@ import { HandlesInterface } from "./types";
 export const handles: HandlesInterface[] = [
   {
     title: "E-mail",
-    link: "m4dd0x078@gmail.com",
+    link: "mailto:m4dd0x078@gmail.com",
   },
   {
     link: "https://linkedin.com/in/m4dd0c",
