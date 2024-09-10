@@ -7,16 +7,16 @@
 ## Overview
 
 - A Personal Portfolio made with love.
-- [live](https://m4dd0c.netlify.app/)
+- [https://m4dd0c.netlify.app/](https://m4dd0c.netlify.app/)
 
 ## Installation
 
 1. Clone the repository
-   ``` git clone https://github.com/m4dd0c/personal-portfolio.git ```
+   `git clone https://github.com/m4dd0c/personal-portfolio.git`
 2. Install Dependencies
-   ``` npm i ```
+   `npm i`
 3. Start
-   ``` npm run dev ```
+   `npm run dev`
 
 ## Technologies Used
 
