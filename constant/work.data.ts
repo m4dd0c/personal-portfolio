@@ -20,22 +20,22 @@ export const work: WorkDataInterface[] = [
     desc: "A Restaurant frontend",
   },
   {
+    id: "3",
+    link: "https://github.com/m4dd0c/skullMovies",
+    title: "SkullMovies",
+    desc: "Discover movies and shows with ratings, cast info, and actor filmographies.",
+  },
+  {
     id: "2",
-    link: "https://studyunknown.netlify.app",
+    link: "https://github.com/m4dd0c/courseBundler",
     title: "StudyUnknown",
     desc: "An innovative virtual teaching platform.",
   },
   {
-    id: "3",
+    id: "4",
     link: "https://todo-m4dd0x.vercel.app/",
     title: "DoIT",
     desc: "An intuitive to-do application.",
-  },
-  {
-    id: "4",
-    link: "https://github.com/m4dd0c/skull-movies",
-    title: "SkullMovies",
-    desc: "Discover movies and shows with ratings, cast info, and actor filmographies.",
   },
   {
     id: "5",
@@ -56,4 +56,3 @@ export const work: WorkDataInterface[] = [
     desc: "A nonstop tic-tac-toe game with scoreboard.",
   },
 ];
-
