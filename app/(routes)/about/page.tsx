@@ -77,7 +77,7 @@ const About = () => {
           target="_blank"
           locale={false}
         >
-          <MotionWrapper>My resume (pdf 77kb)</MotionWrapper>
+          <MotionWrapper>My resume (pdf 74kb)</MotionWrapper>
         </Link>
       </div>
     </div>
