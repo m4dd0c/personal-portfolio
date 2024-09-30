@@ -37,3 +37,6 @@ next-env.d.ts
 
 # zone identifier
 *:Zone.Identifier
+
+# todos 
+todo.md
