@@ -5,6 +5,7 @@ export const work: WorkDataInterface[] = [
     id: "120",
     link: "https://devunity.netlify.app/",
     title: "DevUnity",
+    preview: "/assets/work/devUnity.png",
     desc: "A multi-user coding platform.",
   },
   {
@@ -39,7 +40,7 @@ export const work: WorkDataInterface[] = [
   },
   {
     id: "5",
-    link: "https://github.com/m4dd0c/skull-movies",
+    link: "https://github.com/m4dd0c/NativeTodo",
     title: "Todo",
     desc: "An auth based todo mobile app with persistent data.",
   },

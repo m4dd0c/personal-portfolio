@@ -8,6 +8,7 @@ export interface WorkDataInterface {
   title: string;
   link: string;
   desc: string;
+  preview?: string;
 }
 export interface IsDesktopClientInterface {
   isDesktopClient?: boolean;
@@ -17,4 +18,4 @@ export interface HomeLinkInterface {
   from: string;
   to: string;
   isDesktopClient?: boolean;
-} 
+}
