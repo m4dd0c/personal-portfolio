@@ -8,7 +8,7 @@ const MotionWrapper = ({
   children: ReactNode;
   px?: number | null;
 }) => {
-  return <motion.div whileHover={{ x: px ? px : 25 }}>{children}</motion.div>;
+  return <motion.div whileHover={{ x: px || 25 }}>{children}</motion.div>;
 };
 
 export default MotionWrapper;

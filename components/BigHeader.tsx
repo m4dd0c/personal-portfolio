@@ -2,9 +2,9 @@ import React from "react";
 
 const BigHeader = ({ text, index }: { text: string; index?: number }) => {
   return (
-    <div className="h-screen w-full bg-black grid place-items-center">
-      <div className="w-3/4 h-1/2">
-        <h1 className="lg:text-8xl text-5xl text-white font-bold leading-relaxed">
+    <div className="grid h-screen w-full place-items-center bg-black">
+      <div className="h-1/2 w-3/4">
+        <h1 className="text-5xl font-bold leading-relaxed text-white lg:text-8xl">
           {index ? (
             <>
               {text.slice(0, index)}

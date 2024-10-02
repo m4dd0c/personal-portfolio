@@ -4,12 +4,14 @@ import HomeLinks from "@/components/clientSide/HomeLinks";
 
 export default function Home() {
   return (
-    <div className="bg-black h-screen">
+    <div className="h-screen bg-black">
       <HomeClient />
-      <div className="h-screen img">
-        <div className="lg:w-3/5 w-full h-screen grid place-items-center">
+      <div className="img h-screen">
+        <div className="grid h-screen w-full place-items-center lg:w-3/5">
           <div className="lg:w-[45%]">
-            <div><HomeLinks from="Hello." to="About" /></div>
+            <div>
+              <HomeLinks from="Hello." to="About" />
+            </div>
             <div className="mt-4">
               <HomeLinks from="I am" to="Work" />
             </div>
@@ -22,4 +24,3 @@ export default function Home() {
     </div>
   );
 }
-

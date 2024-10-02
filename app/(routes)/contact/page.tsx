@@ -11,7 +11,7 @@ const Contact = () => {
       <HangingBtn />
       <BigHeader text="let's make something great" index={11} />
       {/* text content below */}
-      <div className="lg:w-1/2 w-5/6 mx-auto mb-24 leading-relaxed text-lg">
+      <div className="mx-auto mb-24 w-5/6 text-lg leading-relaxed lg:w-1/2">
         <LilHeader text="Contact" />
         <p>
           I am actively exploring opportunities for meaningful collaborations
@@ -35,15 +35,14 @@ const Contact = () => {
           below.
         </p>
         <br />
-        <ul className="leading-loose font-semibold">
+        <ul className="font-semibold leading-loose">
           {handles.map((val, i) => (
-              <li key={i}>
-                <a href={val.link} title={val.link} className="red">
-                  <MotionWrapper>{val.title}</MotionWrapper>
-                </a>
-              </li>
-            )
-          )}
+            <li key={i}>
+              <a href={val.link} title={val.link} className="red">
+                <MotionWrapper>{val.title}</MotionWrapper>
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

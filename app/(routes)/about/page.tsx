@@ -15,14 +15,14 @@ const About = () => {
       <Image
         src={aboutPic}
         alt="loading..."
-        className="lg:h-auto lg:w-[80vw] object-cotain ml-auto mr-auto lg:mr-0"
+        className="mx-auto object-contain lg:mr-0 lg:h-auto lg:w-[80vw]"
       />
       {/* text content below */}
-      <div className="lg:w-1/2 w-screen mx-auto my-36 leading-relaxed px-10">
+      <div className="mx-auto my-36 w-screen px-10 leading-relaxed lg:w-1/2">
         <LilHeader text="About" />
 
-        <p className="lg:text-2xl text-lg">
-          Hi, I'm Manish Suthar, alias as m4dd0c. I am an avid student with
+        <p className="text-lg lg:text-2xl">
+          Hi, I&amp;m Manish Suthar, alias as m4dd0c. I am an avid student with
           almost 3 years of self-practice in various skills.
         </p>
         <br />

@@ -72,7 +72,7 @@ const HoverLink = ({
             target="_blank"
             ref={prevRef}
             href={link}
-            className="absolute transition-opacity border-4 border-red-300 rounded-xl hover:border-red-500 overflow-hidden"
+            className="absolute overflow-hidden rounded-xl border-4 border-red-300 transition-opacity hover:border-red-500"
           >
             <motion.img
               src={src}
@@ -80,7 +80,7 @@ const HoverLink = ({
               width={200}
               height={100}
               whileHover={{ scale: 1.1 }}
-              className="object-cover rounded-lg block"
+              className="block rounded-lg object-cover"
             />
           </motion.a>
         )}

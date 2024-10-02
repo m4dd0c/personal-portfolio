@@ -7,11 +7,7 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      // fontFamily: {
-      //   sogoeUI: "var(--font-sogoe)",
-      // },
-    },
+    extend: {},
   },
   plugins: [],
 };

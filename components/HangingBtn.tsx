@@ -9,7 +9,7 @@ const HangingBtn = () => {
       whileHover={{ x: -10 }}
       onMouseEnter={(e) => changeContentOnOver("m4dd0x.app", e)}
       onMouseLeave={(e) => changeContentOnOver("m4dd0x.", e)}
-      className="fixed lg:right-56 right-10 lg:top-28 top-10 z-50"
+      className="fixed right-10 top-10 z-50 lg:right-56 lg:top-28"
     >
       <Link href={"/"}>
         <h1 className="font-bold">m4dd0x.</h1>

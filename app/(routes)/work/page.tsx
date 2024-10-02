@@ -9,7 +9,7 @@ const Work = () => {
     <div>
       <HangingBtn />
       <BigHeader text="Products, I've built." />
-      <div className="lg:w-3/4 w-screen lg:my-[40vh] my-28 lg:mx-auto px-10">
+      <div className="my-28 w-screen px-10 lg:mx-auto lg:my-[40vh] lg:w-3/4">
         {/* text content below */}
         {work.map((val) => (
           <WorkCard key={val.id} data={val} />

@@ -27,8 +27,9 @@ const HomeLinks = ({ from, to }: HomeLinkInterface) => {
 
   // setting client info
   useEffect(() => {
-    isDesktop() ? setIsDesktopClient(true) : setIsDesktopClient(false);
-  }, [isDesktop]);
+    if (isDesktop()) setIsDesktopClient(true);
+    else setIsDesktopClient(false);
+  }, []);
 
   return isDesktopClient ? (
     <Link href={`/${to.toLowerCase()}`}>

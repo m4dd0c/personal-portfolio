@@ -6,12 +6,14 @@ const HomeClient = () => {
   const [isDesktopClient, setIsDesktopClient] = useState(true);
 
   useEffect(() => {
-    isDesktop() ? setIsDesktopClient(true) : setIsDesktopClient(false);
-  }, [isDesktop]);
+    if (isDesktop()) setIsDesktopClient(true);
+    else setIsDesktopClient(false);
+  }, []);
+
   return (
     <>
       {!isDesktopClient && (
-        <p className="absolute bottom-10 w-screen text-center opacity-40 animate-bounce">
+        <p className="absolute bottom-10 w-screen animate-bounce text-center opacity-40">
           Tap anywhere
         </p>
       )}
