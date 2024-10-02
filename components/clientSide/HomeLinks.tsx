@@ -4,7 +4,6 @@ import React, { MouseEvent, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { hover } from "@/constant/motionObjs";
 import { isDesktop } from "@/utils/isDesktop";
-import { HomeLinkInterface } from "@/constant/types";
 
 export const changeContentOnOver = (text: string, e: MouseEvent) => {
   const elem = e.target as HTMLHeadingElement;

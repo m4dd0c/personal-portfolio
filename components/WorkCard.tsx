@@ -1,4 +1,3 @@
-import { WorkDataInterface } from "@/constant/types";
 import React from "react";
 import MotionWrapper from "./clientSide/MotionWrapper";
 import HoverLink from "./clientSide/HoverLink";

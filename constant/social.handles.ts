@@ -1,5 +1,3 @@
-import { HandlesInterface } from "./types";
-
 export const handles: HandlesInterface[] = [
   {
     title: "E-mail (m4dd0x078@gmail.com)",

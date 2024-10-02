@@ -1,5 +1,3 @@
-import { WorkDataInterface } from "./types";
-
 export const work: WorkDataInterface[] = [
   {
     id: "120",

@@ -1,21 +1,23 @@
-export interface HandlesInterface {
+interface HandlesInterface {
   title: string;
   link: string;
 }
 
-export interface WorkDataInterface {
+interface WorkDataInterface {
   id: string;
   title: string;
   link: string;
   desc: string;
   preview?: string;
 }
-export interface IsDesktopClientInterface {
+interface IsDesktopClientInterface {
   isDesktopClient?: boolean;
 }
 
-export interface HomeLinkInterface {
+interface HomeLinkInterface {
   from: string;
   to: string;
   isDesktopClient?: boolean;
 }
+
+type TActive = boolean | null;
