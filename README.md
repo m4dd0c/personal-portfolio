@@ -6,7 +6,7 @@
 
 ## Overview
 
-![Image]("./images/home.png")
+![Image](./images/home.png)
 
 - A Personal Portfolio made with love.
 - [https://m4dd0c.netlify.app/](https://m4dd0c.netlify.app/)
