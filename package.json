@@ -8,7 +8,8 @@
     "start": "next start",
     "lint:check": "next lint",
     "lint:fix": "next lint --fix",
-    "pretty:fix": "prettier --write --config ./.prettierrc ."
+    "pretty:fix": "prettier --write --config ./.prettierrc .",
+    "pretty:check": "prettier --check --config ./.prettierrc ."
   },
   "dependencies": {
     "framer-motion": "^10.16.5",
