@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint:check": "next lint",
+    "lint:fix": "next lint --fix",
     "pretty:fix": "prettier --write --config ./.prettierrc ."
   },
   "dependencies": {

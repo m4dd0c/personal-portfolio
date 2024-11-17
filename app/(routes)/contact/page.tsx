@@ -11,7 +11,7 @@ const Contact = () => {
       <HangingBtn />
       <BigHeader text="let's make something great" index={11} />
       {/* text content below */}
-      <div className="mx-auto mb-24 w-5/6 text-lg leading-relaxed  lg:w-1/2">
+      <div className="mx-auto mb-24 w-5/6 text-lg leading-relaxed lg:w-1/2">
         <LilHeader text="Contact" />
         <p>
           I am actively exploring opportunities for meaningful collaborations
