@@ -3,7 +3,16 @@
     "next/core-web-vitals",
     "standard",
     "plugin:tailwindcss/recommended",
+    "plugin:prettier/recommended",
     "prettier",
     "next/typescript"
-  ]
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": true
+      }
+    ]
+  }
 }

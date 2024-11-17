@@ -1,0 +1,10 @@
+/node_modules
+./dist
+
+*.md
+*.yml
+*.yaml
+
+*.env
+.env
+.env.*

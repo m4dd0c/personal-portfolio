@@ -6,5 +6,3 @@ export const hover = {
     x: 40,
   },
 };
-
-
