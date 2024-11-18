@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { isDesktop } from "@/utils/isDesktop";
+import { isDesktop } from "../../utils/isDesktop";
 
 const HomeClient = () => {
   const [isDesktopClient, setIsDesktopClient] = useState(true);

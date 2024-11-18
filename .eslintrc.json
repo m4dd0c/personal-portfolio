@@ -11,8 +11,11 @@
     "prettier/prettier": [
       "error",
       {
-        "semi": true
+        "semi": true,
+        "singleQuote": false,
+        "endOfLine": "auto"
       }
     ]
   }
 }
+
