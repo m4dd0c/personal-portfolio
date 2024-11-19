@@ -16,7 +16,7 @@ export default function Home() {
               <HomeLinks from="I am" to="Work" />
             </div>
             <div className="mt-4">
-              <HomeLinks from="m4dd0x" to="Contact" />
+              <HomeLinks from="m4dd0c" to="Contact" />
             </div>
           </div>
         </div>

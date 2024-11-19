@@ -14,7 +14,9 @@ const About = () => {
       <BigHeader text="I design & build Digital Products" index={16} />
       <Image
         src={aboutPic}
-        alt="loading..."
+        alt="aboutPic"
+        width={100}
+        height={100}
         className="mx-auto object-contain lg:mr-0 lg:h-auto lg:w-[80vw]"
       />
       {/* text content below */}

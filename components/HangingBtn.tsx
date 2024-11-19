@@ -7,12 +7,12 @@ const HangingBtn = () => {
   return (
     <motion.div
       whileHover={{ x: -10 }}
-      onMouseEnter={(e) => changeContentOnOver("m4dd0x.app", e)}
-      onMouseLeave={(e) => changeContentOnOver("m4dd0x.", e)}
+      onMouseEnter={(e) => changeContentOnOver("m4dd0c.app", e)}
+      onMouseLeave={(e) => changeContentOnOver("m4dd0c.", e)}
       className="fixed right-10 top-10 z-50 lg:right-56 lg:top-28"
     >
       <Link href={"/"}>
-        <h1 className="font-bold">m4dd0x.</h1>
+        <h1 className="font-bold">m4dd0c.</h1>
       </Link>
     </motion.div>
   );

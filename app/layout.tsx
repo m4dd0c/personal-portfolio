@@ -5,7 +5,7 @@ import "./globals.css";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "m4dd0x",
+  title: "m4dd0c",
   description: "A Portfolio made with Nextjs",
 };
 
