@@ -7,5 +7,7 @@ npm run lint:fix
 echo ""
 echo "============================ Running tests ============================"
 npm test
+echo ""
+echo "============================ Commiting code ============================"
 
 
