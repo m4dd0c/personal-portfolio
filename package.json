@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prepare": "husky",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -10,8 +11,8 @@
     "lint:fix": "next lint --fix",
     "pretty:fix": "prettier --write --config ./.prettierrc .",
     "pretty:check": "prettier --check --config ./.prettierrc .",
-    "test": "vitest",
-    "prepare": "husky"
+    "test": "vitest --no-watch",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "framer-motion": "^10.16.5",

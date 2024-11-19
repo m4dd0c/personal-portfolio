@@ -1,6 +1,11 @@
-npm test
+echo ""
+echo "============================ Running pretty:fix ============================"
 npm run pretty:fix
+echo ""
+echo "============================ Running lint:fix ============================"
 npm run lint:fix
-
+echo ""
+echo "============================ Running tests ============================"
+npm test
 
 
