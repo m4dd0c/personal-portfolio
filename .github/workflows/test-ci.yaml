@@ -1,7 +1,7 @@
 name: Unit testing
 
 on:
-  push_request:
+  pull_request:
     branches:
       - "**"
   push:

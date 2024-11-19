@@ -3,7 +3,7 @@ name: Linting, and formatting
 on:
   pull_request:
     branches:
-      - '**'
+      - "**"
   push:
     branches:
       - "**"
