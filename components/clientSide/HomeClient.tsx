@@ -14,7 +14,7 @@ const HomeClient = () => {
       {!isDesktopClient && (
         <p
           id="mobile-directive"
-          className="absolute bottom-10 w-screen animate-bounce text-center opacity-40"
+          className="absolute bottom-10 w-screen  animate-bounce text-center opacity-40"
         >
           Tap anywhere
         </p>
