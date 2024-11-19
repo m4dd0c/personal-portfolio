@@ -1,9 +1,10 @@
 name: Linting, and formatting
 
 on:
-  pull_request:
-    branches:
-      - '**'
+  workflow_dispatch:
+  # pull_request:
+  #   branches:
+  #     - '**'
 
 jobs:
   Continuous-Integration:
@@ -12,6 +13,7 @@ jobs:
     steps:
       - name: "Checkout Repository"
         uses: actions/checkout@v3
+        
       - name: "Cache Node Modules"
         uses: actions/cache@v3
         with:
@@ -19,9 +21,12 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+
       - name: "Install dependencies"
         run: npm install --legacy-peer-deps
+
       - name: "Run linting check"
         run: npm run lint:check
+
       - name: "Run Formatting"
         run: npm run pretty:check
