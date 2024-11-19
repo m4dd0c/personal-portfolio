@@ -1,10 +1,9 @@
 name: Linting, and formatting
 
 on:
-  workflow_dispatch:
-  # pull_request:
-  #   branches:
-  #     - '**'
+  pull_request:
+    branches:
+      - '**'
 
 jobs:
   Continuous-Integration:
@@ -13,7 +12,7 @@ jobs:
     steps:
       - name: "Checkout Repository"
         uses: actions/checkout@v4
-        
+
       - name: "Cache Node Modules"
         uses: actions/cache@v4
         with:
