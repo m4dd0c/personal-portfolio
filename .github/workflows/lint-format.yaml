@@ -23,7 +23,9 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: "Install dependencies"
-        run: npm install --legacy-peer-deps
+        run: |
+          npm install --legacy-peer-deps
+          npm i -g prettier
 
       - name: "Run Formatting"
         run: npm run pretty:check
