@@ -1,12 +1,19 @@
-import { vi, describe, expect, it, test } from "vitest";
+import React from "react";
+import { vi, describe, expect, it } from "vitest";
 import { screen, render } from "@testing-library/react";
-import HomeClient from "@/components/clientSide/HomeClient";
+import HomeClient from "../components/clientSide/HomeClient";
+import * as utils from "../utils/isDesktop";
+
+vi.mock("../utils/isDesktop.tsx", () => {
+  return {
+    isDesktop: vi.fn(),
+  };
+});
 
 describe("Mobile specific tests", () => {
-  it("should render 'tap anywhere' text", () => {
+  it("should render 'Tap anywhere' text", () => {
+    vi.spyOn(utils, "isDesktop").mockReturnValue(false);
     render(<HomeClient />);
-    expect(
-      screen.getByRole("paragraph", { name: "Tap anywhere" })
-    ).toBeDefined();
+    expect(screen.getByText("Tap anywhere")).toBeInTheDocument();
   });
 });
