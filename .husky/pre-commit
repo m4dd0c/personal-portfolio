@@ -1,0 +1,6 @@
+npm test
+npm run pretty:fix
+npm run lint:fix
+
+
+
