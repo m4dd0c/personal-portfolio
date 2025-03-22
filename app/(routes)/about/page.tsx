@@ -24,7 +24,7 @@ const About = () => {
         <LilHeader text="About" />
 
         <p className="text-lg lg:text-2xl">
-          Hi, I&amp;m Manish Suthar, alias as m4dd0c. I am an avid student with
+          Hi, I’m Manish Suthar, alias as m4dd0c. I am an avid student with
           almost 3 years of self-practice in various skills.
         </p>
         <br />
@@ -79,7 +79,7 @@ const About = () => {
           target="_blank"
           locale={false}
         >
-          <MotionWrapper>My resume (pdf 74kb)</MotionWrapper>
+          <MotionWrapper>My resume (pdf 379kb)</MotionWrapper>
         </Link>
       </div>
     </div>

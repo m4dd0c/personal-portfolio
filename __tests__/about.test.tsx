@@ -18,7 +18,7 @@ describe("About Page specific tests", () => {
     render(<AboutPage />);
     expect(screen.getByRole("link", { name: "ISTJ-A" })).toBeInTheDocument();
     expect(
-      screen.getByRole("link", { name: "My resume (pdf 74kb)" })
+      screen.getByRole("link", { name: "My resume (pdf 379kb)" })
     ).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "m4dd0c." })).toBeInTheDocument();
   });
