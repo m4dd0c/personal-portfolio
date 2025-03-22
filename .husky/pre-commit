@@ -1,6 +1,6 @@
 echo ""
 echo "============================ Running linting and formatting ============================"
-echo ""
+echo "Add later: npx lint-staged"
 echo "============================ Running tests ============================"
 npm test
 echo ""

@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   "*.jsx": ["eslint --fix", "prettier --write"],
   "*.tsx": ["eslint --fix", "prettier --write", "tsc --noEmit"],
   "*.js": ["eslint --fix", "prettier --write"],
@@ -6,3 +6,5 @@ module.exports = {
   "*.json": ["prettier --write"],
   "*.css": ["prettier --write"],
 };
+
+export default config;
