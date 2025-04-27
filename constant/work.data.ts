@@ -3,6 +3,12 @@ import crypto from "crypto";
 export const work: WorkDataInterface[] = [
   {
     id: crypto.randomUUID(),
+    link: "https://business-tool.vercel.app/",
+    title: "Shivam Clothings",
+    desc: "Shivam Clothing is a full-fladge ecommerce website.",
+  },
+  {
+    id: crypto.randomUUID(),
     link: "https://devunity.netlify.app/",
     title: "DevUnity",
     preview: "/assets/work/devUnity.png",
