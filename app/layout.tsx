@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import { SITE_URL } from "@/constant";
-// import OG_IMAGE from "@/public/assets/metadata/opengraph-image.png";
+// import OG_IMAGE from "/metadata/opengraph-image.png";
 import "./globals.css";
 import manifest from "./manifest";
 
@@ -30,6 +30,36 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: "./" },
   manifest: manifest().start_url,
+  icons: {
+    icon: [
+      {
+        url: "/favicon/favicon.ico",
+        type: "image/x-icon",
+      },
+      {
+        url: "/favicon/favicon.ico",
+        sizes: "16x16",
+        type: "image/x-icon",
+      },
+      {
+        url: "/favicon/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        url: "/favicon/favicon-96x96.png",
+        sizes: "96x96",
+        type: "image/png",
+      },
+    ],
+    apple: [{ url: "/favicon/apple-icon.png", type: "image/png" }],
+    shortcut: [
+      {
+        url: "/favicon/favicon.ico",
+        type: "image/x-icon",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -39,6 +69,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="apple-mobile-web-app-title" content="m4dd0c" />
+      </head>
       <body className={`${outfit.className} bg-black text-white antialiased`}>
         {children}
       </body>
