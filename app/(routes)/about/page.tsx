@@ -7,6 +7,7 @@ import HangingBtn from "@/components/HangingBtn";
 import MotionWrapper from "@/components/clientSide/MotionWrapper";
 import Link from "next/link";
 
+export const dynamic = "force-static";
 const About = () => {
   return (
     <div className="bg-black text-white">

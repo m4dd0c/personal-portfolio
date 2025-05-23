@@ -4,6 +4,7 @@ import WorkCard from "@/components/WorkCard";
 import { work } from "@/constant/work.data";
 import React from "react";
 
+export const dynamic = "force-static";
 const Work = () => {
   return (
     <div>

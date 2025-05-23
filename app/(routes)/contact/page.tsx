@@ -5,6 +5,7 @@ import MotionWrapper from "@/components/clientSide/MotionWrapper";
 import { handles } from "@/constant/social.handles";
 import React from "react";
 
+export const dynamic = "force-static";
 const Contact = () => {
   return (
     <div>
