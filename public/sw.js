@@ -68,7 +68,7 @@ if (!self.define) {
     });
   };
 }
-define(["./workbox-e43f5367"], function (workbox) {
+define(["./workbox-7144475a"], function (workbox) {
   "use strict";
 
   importScripts();
@@ -80,16 +80,14 @@ define(["./workbox-e43f5367"], function (workbox) {
       cacheName: "start-url",
       plugins: [
         {
-          cacheWillUpdate: async ({ request, response, event, state }) => {
-            if (response && response.type === "opaqueredirect") {
-              return new Response(response.body, {
-                status: 200,
-                statusText: "OK",
-                headers: response.headers,
-              });
-            }
-            return response;
-          },
+          cacheWillUpdate: async ({ response: e }) =>
+            e && "opaqueredirect" === e.type
+              ? new Response(e.body, {
+                  status: 200,
+                  statusText: "OK",
+                  headers: e.headers,
+                })
+              : e,
         },
       ],
     }),

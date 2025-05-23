@@ -1,4 +1,4 @@
-import PWA from "next-pwa";
+import PWA from "@ducanh2912/next-pwa";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -12,23 +12,12 @@ const nextConfig = {
 };
 
 const withPWA = PWA({
+  // disable: process.env.NODE_ENV === "development",
+  aggressiveFrontEndNavCaching: true,
+  disable: false,
   dest: "public",
-  register: true,
   skipWaiting: true,
   cacheOnFrontEndNav: true,
-  runtimeCaching: [
-    {
-      urlPattern: /^https:\/\/api\.microlink\.io\/.*/,
-      handler: "NetworkFirst",
-      options: {
-        cacheName: "microlink-cache",
-        expiration: {
-          maxEntries: 50,
-          maxAgeSeconds: 60 * 60 * 24 * 30, // 30 Days
-        },
-      },
-    },
-  ],
 });
 
 export default withPWA(nextConfig);

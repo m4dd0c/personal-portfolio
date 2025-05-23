@@ -69,9 +69,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <meta name="apple-mobile-web-app-title" content="m4dd0c" />
-      </head>
       <body className={`${outfit.className} bg-black text-white antialiased`}>
         {children}
       </body>
