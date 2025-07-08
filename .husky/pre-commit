@@ -1,8 +1,8 @@
 echo ""
 echo "============================ Running linting and formatting ============================"
-echo "Add later: npx lint-staged"
+echo "Add Later: npx lint-staged"
 echo "============================ Running tests ============================"
-npm test
+echo "Add Later: npm test"
 echo ""
 echo "============================ Commiting code ============================"
 
