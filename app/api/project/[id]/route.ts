@@ -54,7 +54,7 @@ export const PUT = async (req: NextRequest) => {
     }
 
     await prisma.$transaction(async (tx) => {
-      const project = await prisma.project.update({
+      const project = await tx.project.update({
         where: { id },
         data: {
           title: p.title,

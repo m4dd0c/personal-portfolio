@@ -31,7 +31,7 @@ export const POST = async (req: NextRequest) => {
     }
 
     await prisma.$transaction(async (tx) => {
-      const project = await prisma.project.create({
+      const project = await tx.project.create({
         data: {
           title: p.title,
           subtitle: p.subtitle,
