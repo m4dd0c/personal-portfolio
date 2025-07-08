@@ -39,3 +39,13 @@ model Project {
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 }
+
+
+model Blog {
+    id String @id @default(cuid())
+    title String @db.VarChar(255)
+    subtitle String? @db.VarChar(255)
+    content String @db.Text
+    created_at DateTime @default(now())
+    updated_at DateTime @updatedAt
+}
