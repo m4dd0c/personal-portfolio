@@ -31,10 +31,11 @@ enum MediaType {
 model Project {
   id  String @id @default(cuid())
   title String @db.VarChar(255)
-  subtitle String @db.VarChar(255)
-  description String @db.Text
+  subtitle String? @db.VarChar(255)
+  description String? @db.Text
   media Media[]
-  url String @db.VarChar(255)
+  url String? @db.VarChar(255)
+  repo_url String? @db.VarChar(255)
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 }
