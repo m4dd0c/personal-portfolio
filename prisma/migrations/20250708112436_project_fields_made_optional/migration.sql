@@ -1,0 +1,5 @@
+-- AlterTable
+ALTER TABLE "Project" ADD COLUMN     "repo_url" VARCHAR(255),
+ALTER COLUMN "subtitle" DROP NOT NULL,
+ALTER COLUMN "description" DROP NOT NULL,
+ALTER COLUMN "url" DROP NOT NULL;
