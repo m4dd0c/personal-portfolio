@@ -40,3 +40,5 @@ next-env.d.ts
 
 # todos 
 todos.md
+
+/app/generated/prisma
