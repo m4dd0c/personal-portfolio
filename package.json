@@ -18,6 +18,7 @@
     "@ducanh2912/next-pwa": "^10.2.9",
     "@prisma/client": "^6.11.1",
     "@prisma/extension-accelerate": "^2.0.2",
+    "cloudinary": "^2.7.0",
     "framer-motion": "^10.16.5",
     "next": "^14.2.13",
     "npm": "^10.2.4",
