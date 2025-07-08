@@ -1,3 +1,4 @@
+import { title } from "process";
 import z from "zod";
 
 const UserSchema = z.object({
@@ -41,4 +42,19 @@ const ProjectSchema = z.object({
   type: z.enum(["IMAGE", "VIDEO"]),
 });
 
-export { UserSchema, MediaSchema, ProjectSchema };
+const BlogSchema = z.object({
+  title: z
+    .string()
+    .min(1, "Title is required")
+    .max(150, "Title must contain at most 150 characters."),
+  subtitle: z
+    .string()
+    .max(200, "Subtitle must contain at most 300 characters.")
+    .optional(),
+  content: z
+    .string()
+    .min(1, "Content is required")
+    .max(10000, "Content must contain at most 10000 characters."),
+});
+
+export { UserSchema, MediaSchema, ProjectSchema, BlogSchema };
