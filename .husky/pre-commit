@@ -1,9 +1,4 @@
-echo ""
-echo "============================ Running linting and formatting ============================"
-echo "Add Later: npx lint-staged"
-echo "============================ Running tests ============================"
-echo "Add Later: npm test"
-echo ""
-echo "============================ Commiting code ============================"
-
-
+echo "Add Winston"
+echo "Add recoil/zustand/jotai"
+echo "Add later: npx lint-staged"
+echo "Add later: npm test"
