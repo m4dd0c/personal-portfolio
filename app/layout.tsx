@@ -4,6 +4,7 @@ import { SITE_URL } from "@/constant";
 // import OG_IMAGE from "/metadata/opengraph-image.png";
 import "./globals.css";
 import manifest from "./manifest";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
       "A personal portfolio website showcasing my projects and skills.",
     url: new URL(SITE_URL),
     siteName: "m4dd0c",
-    images: "https://m4dd0c.netlify.app/assets/metadata/opengraph-image.png",
+    images: "https://m4dd0c.me/assets/metadata/opengraph-image.png",
   },
   alternates: { canonical: "./" },
   manifest: manifest().start_url,
@@ -69,7 +70,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <GoogleTagManager
+        gtmId={`${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER}`}
+      />
       <body className={`${outfit.className} bg-black text-white antialiased`}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
         {children}
       </body>
     </html>
