@@ -5,6 +5,10 @@ import { SITE_URL } from "@/constant";
 import "./globals.css";
 import manifest from "./manifest";
 import { GoogleTagManager } from "@next/third-parties/google";
+<<<<<<< HEAD
+=======
+import { Toaster } from "@/components/ui/sonner";
+>>>>>>> 56b9110a32b36479ecca227f697712dea80e8011
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -85,6 +89,7 @@ export default function RootLayout({
         </noscript>
         {/* End Google Tag Manager (noscript) */}
         {children}
+        <Toaster position="top-right" richColors />
       </body>
     </html>
   );
