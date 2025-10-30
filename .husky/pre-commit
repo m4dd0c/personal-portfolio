@@ -1,4 +1,0 @@
-echo "Add Winston"
-echo "Add recoil/zustand/jotai"
-echo "Add later: npx lint-staged"
-echo "Add later: npm test"

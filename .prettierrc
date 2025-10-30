@@ -1,8 +1,0 @@
-{
-  "tabWidth": 2,
-  "singleQuote": false,
-  "endOfLine": "auto",
-  "htmlWhitespaceSensitivity": "ignore",
-  "trailingComma": "es5",
-  "semi": true
-}
