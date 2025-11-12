@@ -7,6 +7,7 @@ import type { projects } from "@/lib/constants";
 
 const ProjectCard = ({ project }: { project: (typeof projects)[number] }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
   return (
     <motion.div
@@ -14,27 +15,32 @@ const ProjectCard = ({ project }: { project: (typeof projects)[number] }) => {
       initial="rest"
       whileHover="hover"
       onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseLeave={() => {
+        setIsHovered(false);
+        setIsVideoLoaded(false);
+      }}
     >
       {/* Project Image/Video */}
       <div className="relative w-full lg:w-[300px] h-[200px] rounded-lg overflow-hidden border border-gray-950/10 dark:border-white/10">
-        {isHovered ? (
+        {isHovered && (
           <video
             src="/assets/videos/candycode.com.mp4"
             autoPlay
             loop
             muted
             playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-        ) : (
-          <Image
-            src={project.image}
-            alt={project.title}
-            fill
-            className="object-cover"
+            onLoadedData={() => setIsVideoLoaded(true)}
+            className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
+            style={{ opacity: isVideoLoaded ? 1 : 0 }}
           />
         )}
+        <Image
+          src={project.image}
+          alt={project.title}
+          fill
+          className="object-cover transition-opacity duration-300"
+          style={{ opacity: isHovered && isVideoLoaded ? 0 : 1 }}
+        />
       </div>
 
       {/* Project Details */}
