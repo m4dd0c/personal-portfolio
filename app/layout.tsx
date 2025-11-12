@@ -1,15 +1,30 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Inter,
+  IBM_Plex_Mono,
+  Nunito,
+  Instrument_Serif,
+} from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Layout/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const nunito = Nunito({
+  variable: "--font-nunito",
   subsets: ["latin"],
+});
+const mono = IBM_Plex_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
+const serif = Instrument_Serif({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -25,9 +40,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${mono.variable} ${nunito.variable} ${serif.variable} antialiased bg-white dark:bg-gray-950 [--pattern-fg:var(--color-gray-950)]/5 dark:[--pattern-fg:var(--color-white)]/10 overflow-x-hidden`}
       >
-        {children}
+        <Header />
+        <main className="flex min-h-screen items-center justify-center h-full pt-14 bg-white dark:bg-gray-950 w-full">
+          {children}
+        </main>
       </body>
     </html>
   );
