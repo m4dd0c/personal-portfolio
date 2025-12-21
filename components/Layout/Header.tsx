@@ -16,7 +16,7 @@ const Header = () => {
           <PlusSVG className="absolute -bottom-0.5 -left-0.5 fill-sky-300 dark:fill-sky-300/50" />
           <PlusSVG className="absolute -right-0.5 -bottom-0.5 fill-sky-300 dark:fill-sky-300/50" />
         </Link>
-        <div className="inline-flex items-center rounded-full bg-gray-950/2 px-2 inset-ring inset-ring-gray-950/8 dark:bg-white/5 dark:inset-ring-white/2 gap-2">
+        <div className="inline-flex items-center rounded-full bg-gray-950/2 px-2 inset-ring inset-ring-gray-950/8 dark:bg-white/5 dark:inset-ring-white/5 gap-2">
           <span className="rounded-full size-3 bg-green-500/30 grid place-items-center animate-pulse">
             <span className="rounded-full size-1.5 bg-green-500 " />
           </span>
