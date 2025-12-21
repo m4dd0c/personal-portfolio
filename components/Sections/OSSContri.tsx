@@ -7,7 +7,7 @@ const OSSContri = () => {
     <>
       <HrText>
         <h2 className="max-w-lg px-2 text-[2.5rem]/10 font-medium tracking-tighter text-balance max-sm:px-4 2xl:mt-0">
-          Top Merged PRs
+          Contributions
         </h2>
       </HrText>
       <br />
