@@ -9,8 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@next/third-parties": "^16.1.0",
     "clsx": "^2.1.1",
     "github-calendar": "^2.3.4",
+    "google": "link:@next/third-parties/google",
     "motion": "^12.23.24",
     "next": "16.0.10",
     "react": "19.2.0",
