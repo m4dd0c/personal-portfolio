@@ -46,28 +46,40 @@ body {
   width: 100%;
   background: transparent;
 }
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 3.5rem;
+  padding-right: 3.5rem;
+  flex-shrink: 0;
+}
+
 .marquee-right {
-  display: flex;
-  animation: marquee 90s linear infinite;
-  width: max-content;
+  animation: marquee-scroll 60s linear infinite;
 }
+
 .marquee-left {
-  display: flex;
-  animation: marquee 30s linear infinite reverse;
-  width: max-content;
+  animation: marquee-scroll 40s linear infinite reverse;
 }
+
 .marquee-left:hover,
 .marquee-right:hover {
   animation-play-state: paused;
   cursor: grab;
 }
 
-@keyframes marquee {
+@keyframes marquee-scroll {
   0% {
     transform: translateX(0);
   }
+
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-25%);
   }
 }
 

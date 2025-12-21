@@ -36,35 +36,34 @@ const SkillMarquee = ({
   dir: "right" | "left";
   iterateCount?: number;
 }) => {
+  const SkillItem = ({ skill }: { skill: Skills }) => (
+    <div className="flex flex-col items-center gap-1 group duration-300 shrink-0">
+      <skill.icon
+        size={30}
+        className="group-hover:scale-110 duration-200 text-gray-400 dark:text-gray-500"
+      />
+      <p className="text-gray-100 dark:text-gray-200">{skill.label}</p>
+    </div>
+  );
+
   return (
     <div className="marquee-container py-2">
       <div
-        className={`space-x-14 ${dir === "left" ? "marquee-left" : "marquee-right"}`}
+        className={`marquee-track ${dir === "left" ? "marquee-left" : "marquee-right"}`}
       >
-        {skills.map((skill, idx) => (
-          <div
-            className="flex flex-col items-center gap-1 group duration-300"
-            key={`dup-${idx}-0`}
-          >
-            <skill.icon
-              size={30}
-              className={`group-hover:scale-110 duration-200 text-gray-400 dark:text-gray-500`}
-            />
-            <p className="text-gray-100 dark:text-gray-200">{skill.label}</p>
-          </div>
-        ))}
-        {skills.map((skill, idx) => (
-          <div
-            className="flex flex-col items-center gap-1 group duration-300"
-            key={`dup-${idx}-1`}
-          >
-            <skill.icon
-              size={30}
-              className={`group-hover:scale-110 duration-200 text-gray-400 dark:text-gray-500`}
-            />
-            <p className="text-gray-100 dark:text-gray-200">{skill.label}</p>
-          </div>
-        ))}
+        {Array(4)
+          .fill(null)
+          .map((_, groupIdx) => (
+            <div
+              className="marquee-content"
+              key={`group-${groupIdx}`}
+              aria-hidden={groupIdx > 0}
+            >
+              {skills.map((skill, idx) => (
+                <SkillItem skill={skill} key={`skill-${groupIdx}-${idx}`} />
+              ))}
+            </div>
+          ))}
       </div>
     </div>
   );
