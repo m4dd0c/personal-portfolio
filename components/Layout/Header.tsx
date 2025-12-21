@@ -36,8 +36,7 @@ const Header = () => {
           className="text-sm sm:text-lg font-serif text-sky-500 dark:text-sky-400 hover:underline"
           href="/proof-of-work"
         >
-          <span className="hidden sm:inline">proof-of-work</span>
-          <span className="sm:hidden">PoW</span>
+          <span className="">proof-of-work</span>
         </Link>
       </div>
     </nav>
