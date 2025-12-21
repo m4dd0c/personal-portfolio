@@ -3,6 +3,7 @@ import HrText from "../ui/HrText";
 import { social_media } from "@/lib/constants";
 import Link from "next/link";
 import { TextHoverEffect } from "../ui/text-hover-effect";
+import { IoArrowForward } from "react-icons/io5";
 
 const Hero = () => {
   return (
@@ -69,18 +70,13 @@ const Hero = () => {
           <div className="flex align-center gap-2 ml-2">
             <div className="flex justify-center align-center gap-4">
               <a
-                className="z-1 max-sm:hidden inline-block rounded-4xl bg-black px-4 py-2 text-sm/6 font-semibold text-white hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
-                href="docs/installation"
+                target="_blank"
+                className="flex justify-center items-center z-1 max-sm:hidden rounded-4xl bg-black px-4 py-2 text-sm/6 font-semibold text-white hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
+                href="https://drive.google.com/file/d/14CBB9zw6nGzN8tz6A0Hi4UYraq8R4PBe/view?usp=sharing"
               >
-                Hire Me
+                <span>Hire Me</span>&nbsp; <IoArrowForward />
               </a>{" "}
             </div>
-            <a
-              className="z-1 max-sm:hidden inline-block rounded-4xl bg-black px-4 py-2 text-sm/6 font-semibold text-white hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
-              href="docs/installation"
-            >
-              Book a Call
-            </a>{" "}
           </div>
         </HrText>
       </div>
