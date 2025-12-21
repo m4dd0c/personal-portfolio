@@ -19,7 +19,7 @@ const StackIUse = () => {
       <HrText>
         <SkillMarquee dir={"right"} skills={techSkills} />
       </HrText>
-      <HrText>
+      <HrText hide={["before"]}>
         <SkillMarquee dir={"left"} skills={nonTechSkills} />
       </HrText>
     </>
