@@ -37,12 +37,17 @@ const SkillMarquee = ({
   iterateCount?: number;
 }) => {
   const SkillItem = ({ skill }: { skill: Skills }) => (
-    <div className="flex flex-col items-center gap-1 group duration-300 shrink-0">
+    <div
+      className="skill-item flex flex-col items-center gap-1 group duration-300 shrink-0"
+      style={{ "--skill-color": skill.color } as React.CSSProperties}
+    >
       <skill.icon
         size={30}
-        className="group-hover:scale-110 duration-200 text-gray-400 dark:text-gray-500"
+        className="skill-icon group-hover:scale-110 duration-200 text-gray-400 dark:text-gray-500"
       />
-      <p className="text-gray-100 dark:text-gray-200">{skill.label}</p>
+      <p className="skill-label text-gray-100 dark:text-gray-200">
+        {skill.label}
+      </p>
     </div>
   );
 

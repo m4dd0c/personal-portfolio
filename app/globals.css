@@ -83,6 +83,17 @@ body {
   }
 }
 
+/* Skill item hover effect */
+.skill-item .skill-icon,
+.skill-item .skill-label {
+  transition: color 0.2s ease;
+}
+
+.skill-item:hover .skill-icon,
+.skill-item:hover .skill-label {
+  color: var(--skill-color);
+}
+
 /* hide scrollbar  */
 ::-webkit-scrollbar {
   display: none;
