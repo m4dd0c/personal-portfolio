@@ -78,9 +78,10 @@ const ExperienceCard = ({ exp }: { exp: (typeof experiences)[number] }) => {
             </p>
           </div>
         </div>
-        <p className="mt-2 hidden text-sm text-gray-600 lg:block dark:text-gray-400">
-          {exp.description}
-        </p>
+        <p
+          className="mt-2 hidden text-sm text-gray-600 lg:block dark:text-gray-400"
+          dangerouslySetInnerHTML={{ __html: exp.description }}
+        />
       </div>
     </motion.a>
   );
