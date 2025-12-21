@@ -34,6 +34,7 @@ const Hero = () => {
               height={192}
               width={192}
               src={"/assets/imgs/poo.gif"}
+              unoptimized
               alt="hello-gif"
               className="h-4 w-auto invert-0"
             />
