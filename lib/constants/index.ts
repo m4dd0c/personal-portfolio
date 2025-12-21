@@ -389,8 +389,10 @@ const projects = [
   },
 ];
 
+const SITE_URL = "https://m4dd0c.com";
 export {
   social_media,
+  SITE_URL,
   experiences,
   nonTechSkills,
   techSkills,
