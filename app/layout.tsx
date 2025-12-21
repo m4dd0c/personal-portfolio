@@ -8,6 +8,7 @@ import {
 import "./globals.css";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Header from "@/components/Layout/Header";
+import { ServiceWorkerRegistration } from "@/components/ServiceWorkerRegistration";
 import manifest from "./manifest";
 import { SITE_URL } from "@/lib/constants";
 
@@ -116,7 +117,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-x-hidden">
+    <html lang="en" className="overflow-x-hidden" suppressHydrationWarning>
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER!} />
       <body
         className={`${inter.variable} ${mono.variable} ${nunito.variable} ${serif.variable} antialiased bg-white dark:bg-gray-950 [--pattern-fg:var(--color-gray-950)]/5 dark:[--pattern-fg:var(--color-white)]/10 overflow-x-hidden`}
@@ -132,6 +133,7 @@ export default function RootLayout({
         </noscript>
         {/* End Google Tag Manager (noscript) */}
         <Header />
+        <ServiceWorkerRegistration />
         <main className="flex min-h-screen items-center justify-center h-full pt-14 bg-white dark:bg-gray-950 w-full overflow-x-hidden">
           {children}
         </main>
