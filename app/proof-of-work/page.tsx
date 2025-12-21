@@ -1,4 +1,3 @@
-import Footer from "@/components/Layout/Footer";
 import HrText from "@/components/ui/HrText";
 import ProjectCard from "@/components/ui/ProjectCard";
 import { projects } from "@/lib/constants";
