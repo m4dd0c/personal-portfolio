@@ -8,20 +8,23 @@ import { IoArrowForward } from "react-icons/io5";
 const Hero = () => {
   return (
     <>
-      <div className="bg-[repeating-linear-gradient(315deg,var(--pattern-fg)_0,var(--pattern-fg)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] px-2 flex justify-between items-center">
+      <div className="bg-[repeating-linear-gradient(315deg,var(--pattern-fg)_0,var(--pattern-fg)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] px-2 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 py-4 sm:py-0">
         <div className="border border-(--pattern-fg) rounded-full p-1 w-fit h-fit my-auto">
           <Image
             src="/assets/imgs/pfp.png"
             alt="Profile Picture"
             width={192}
             height={192}
-            className="rounded-full size-26 border border-white/10 shadow-lg"
+            className="rounded-full size-20 sm:size-26 border border-white/10 shadow-lg"
           />
         </div>
-        <div className="h-26 uppercase">
+        <div className="h-16 sm:h-26 uppercase hidden sm:block">
           <TextHoverEffect text="m4dd0c" />
         </div>
-        <div />
+        <h2 className="sm:hidden text-2xl font-bold tracking-tighter uppercase text-gray-800 dark:text-gray-200">
+          m4dd0c
+        </h2>
+        <div className="hidden sm:block" />
       </div>
       <div>
         <HrText>
@@ -37,8 +40,8 @@ const Hero = () => {
           </div>
         </HrText>
         <HrText hide={["after", "before"]}>
-          <div className="flex justify-between items-end px-2">
-            <h1 className="tracking-tighter text-balance max-lg:font-medium text-3xl lg:text-4xl xl:text-6xl">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end px-2 gap-2 sm:gap-0">
+            <h1 className="tracking-tighter text-balance max-lg:font-medium text-2xl sm:text-3xl lg:text-4xl xl:text-6xl">
               Manish Suthar
             </h1>
             <div className="flex justify-center align-center space-x-3">
@@ -50,14 +53,14 @@ const Hero = () => {
                   rel="noopener noreferrer"
                   className="text-gray-50/60 hover:text-gray-50 transition"
                 >
-                  <item.icon size={20} />
+                  <item.icon size={18} className="sm:w-5 sm:h-5" />
                 </Link>
               ))}
             </div>
           </div>
         </HrText>
         <HrText>
-          <p className="text-sm font-medium text-gray-50/40 ml-2">
+          <p className="text-xs sm:text-sm font-medium text-gray-50/40 ml-2">
             <span className="hover:text-gray-50/50">21</span> •{" "}
             <span className="hover:text-gray-50/50">Dev</span> •{" "}
             <span className="hover:text-gray-50/50">Build</span> •{" "}
@@ -71,7 +74,7 @@ const Hero = () => {
             <div className="flex justify-center align-center gap-4">
               <a
                 target="_blank"
-                className="flex justify-center items-center z-1 max-sm:hidden rounded-4xl bg-black px-4 py-2 text-sm/6 font-semibold text-white hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
+                className="flex justify-center items-center z-1 rounded-4xl bg-black px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm/6 font-semibold text-white hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
                 href="https://drive.google.com/file/d/14CBB9zw6nGzN8tz6A0Hi4UYraq8R4PBe/view?usp=sharing"
               >
                 <span>Hire Me</span>&nbsp; <IoArrowForward />

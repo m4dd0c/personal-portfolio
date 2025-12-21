@@ -54,9 +54,16 @@ body {
 
 .marquee-content {
   display: flex;
-  gap: 3.5rem;
-  padding-right: 3.5rem;
+  gap: 2rem;
+  padding-right: 2rem;
   flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+  .marquee-content {
+    gap: 3.5rem;
+    padding-right: 3.5rem;
+  }
 }
 
 .marquee-right {

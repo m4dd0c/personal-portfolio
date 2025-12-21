@@ -10,36 +10,37 @@ export const Graph = () => {
     text: "",
   });
   return (
-    <div className="relative">
-      <GitHubCalendar
-        username="m4dd0c"
-        colorScheme="dark"
-        renderBlock={(block, activity) => {
-          if (!activity) return block;
+    <div className="relative overflow-x-auto">
+      <div className="min-w-[750px] sm:min-w-0">
+        <GitHubCalendar
+          username="m4dd0c"
+          colorScheme="dark"
+          renderBlock={(block, activity) => {
+            if (!activity) return block;
 
-          return React.cloneElement(block, {
-            onMouseEnter: (e: React.MouseEvent<SVGRectElement>) => {
-              const rect = (e.target as SVGRectElement).getBoundingClientRect();
-              const date = new Date(activity.date);
-              const month = date.toLocaleString("en-US", { month: "long" });
-              const day = date.getDate();
-              const weekday = date.toLocaleString("en-US", {
-                weekday: "short",
-              });
+            return React.cloneElement(block, {
+              onMouseEnter: (e: React.MouseEvent<SVGRectElement>) => {
+                const rect = (e.target as SVGRectElement).getBoundingClientRect();
+                const date = new Date(activity.date);
+                const month = date.toLocaleString("en-US", { month: "long" });
+                const day = date.getDate();
+                const weekday = date.toLocaleString("en-US", {
+                  weekday: "short",
+                });
 
-              setTooltip({
-                visible: true,
-                x: rect.x + rect.width / 2,
-                y: rect.y - 30,
-                text: `${activity.count} contribution${
-                  activity.count !== 1 ? "s" : ""
-                } on ${weekday}, ${month} ${day}`,
-              });
-            },
-            onMouseLeave: () => setTooltip((t) => ({ ...t, visible: false })),
-          });
-        }}
-      />
+                setTooltip({
+                  visible: true,
+                  x: rect.x + rect.width / 2,
+                  y: rect.y - 30,
+                  text: `${activity.count} contribution${activity.count !== 1 ? "s" : ""
+                    } on ${weekday}, ${month} ${day}`,
+                });
+              },
+              onMouseLeave: () => setTooltip((t) => ({ ...t, visible: false })),
+            });
+          }}
+        />
+      </div>
 
       {tooltip.visible && (
         <div

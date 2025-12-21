@@ -38,12 +38,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <body
         className={`${inter.variable} ${mono.variable} ${nunito.variable} ${serif.variable} antialiased bg-white dark:bg-gray-950 [--pattern-fg:var(--color-gray-950)]/5 dark:[--pattern-fg:var(--color-white)]/10 overflow-x-hidden`}
       >
         <Header />
-        <main className="flex min-h-screen items-center justify-center h-full pt-14 bg-white dark:bg-gray-950 w-full">
+        <main className="flex min-h-screen items-center justify-center h-full pt-14 bg-white dark:bg-gray-950 w-full overflow-x-hidden">
           {children}
         </main>
       </body>
