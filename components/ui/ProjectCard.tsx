@@ -22,11 +22,10 @@ const ProjectCard = ({ project }: { project: (typeof projects)[number] }) => {
     >
       {/* Project Image/Video */}
       <div className="relative w-full lg:w-[300px] h-[200px] rounded-lg overflow-hidden border border-gray-950/10 dark:border-white/10">
-        {isHovered && (
+        {isHovered && project?.preview && (
           <video
-            src="/assets/videos/candycode.com.mp4"
+            src={project.preview}
             autoPlay
-            loop
             muted
             playsInline
             onLoadedData={() => setIsVideoLoaded(true)}
