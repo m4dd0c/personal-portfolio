@@ -7,10 +7,12 @@ const useNetwork = () => {
     if (typeof window === "undefined") return;
     const updateOnlineStatus = () => setIsOnline(navigator.onLine);
 
+    window.addEventListener("load", updateOnlineStatus);
     window.addEventListener("online", updateOnlineStatus);
     window.addEventListener("offline", updateOnlineStatus);
 
     return () => {
+      window.removeEventListener("load", updateOnlineStatus);
       window.removeEventListener("online", updateOnlineStatus);
       window.removeEventListener("offline", updateOnlineStatus);
     };
