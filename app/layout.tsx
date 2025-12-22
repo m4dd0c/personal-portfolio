@@ -11,6 +11,8 @@ import Header from "@/components/Layout/Header";
 import { ServiceWorkerRegistration } from "@/components/ServiceWorkerRegistration";
 import manifest from "./manifest";
 import { SITE_URL } from "@/lib/constants";
+import { Toaster } from "sonner";
+import NetworkStatus from "@/components/NetworkStatus";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -125,7 +127,8 @@ export default function RootLayout({
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER!}`}
+            src={`https://www.googletagmanager.com/ns.html?id=${process.env
+              .NEXT_PUBLIC_GOOGLE_TAG_MANAGER!}`}
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
@@ -136,6 +139,8 @@ export default function RootLayout({
         <ServiceWorkerRegistration />
         <main className="flex min-h-screen items-center justify-center h-full pt-14 bg-white dark:bg-gray-950 w-full overflow-x-hidden">
           {children}
+          <Toaster position="bottom-right" richColors />
+          <NetworkStatus />
         </main>
       </body>
     </html>
