@@ -281,8 +281,17 @@ const projects = [
       "https://res.cloudinary.com/dscuiqkrh/image/upload/v1764614600/kairo_tu074e.webp",
     preview:
       "https://res.cloudinary.com/dscuiqkrh/video/upload/v1764611912/Portfolio/preview.ecom_jare9p.mov",
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/m4dd0c/shivam-clothings",
+    techStack: [
+      "Next.js",
+      "TurboRepo",
+      "TypeScript",
+      "Shadcn/ui",
+      "Tailwind CSS",
+      "MongoDB",
+      "Nodemailer",
+      "Twilio",
+      "Cloudinary",
+    ],
     live: "https://kairo.m4dd0c.me/",
   },
   {
@@ -295,7 +304,17 @@ const projects = [
       "https://res.cloudinary.com/dscuiqkrh/image/upload/v1764614600/devunity_fhefou.webp",
     preview:
       "https://res.cloudinary.com/dscuiqkrh/video/upload/v1764611859/Portfolio/preview.devunity_drpqes.mov",
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    techStack: [
+      "React",
+      "WebSockets",
+      "Express",
+      "TypeScript",
+      "Aceternity",
+      "Tailwind CSS",
+      "MongoDB",
+      "Nodemailer",
+      "Cloudinary",
+    ],
     github: "https://github.com/m4dd0c/devunity",
     live: "https://devunity.netlify.app/",
   },
@@ -309,7 +328,16 @@ const projects = [
       "https://res.cloudinary.com/dscuiqkrh/image/upload/v1764614600/devflood_tw2cec.webp",
     preview:
       "https://res.cloudinary.com/dscuiqkrh/video/upload/v1764612382/preview.devflood_rwhswv.mov",
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    techStack: [
+      "Next.js",
+      "Server Actions",
+      "MongoDB",
+      "Nodemailer",
+      "shadcn/ui",
+      "Clerk Auth",
+      "Webhooks",
+      "Cloudinary",
+    ],
     github: "https://github.com/m4dd0c/devflood",
     live: "https://dev-flood.vercel.app/",
   },
@@ -323,8 +351,14 @@ const projects = [
       "https://res.cloudinary.com/dscuiqkrh/image/upload/v1766338811/Portfolio/maheshhandicraft_kxvw20.png",
     preview:
       "https://res.cloudinary.com/dscuiqkrh/video/upload/v1764611894/Portfolio/preview.handicraft_mjpnyq.mov",
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/m4dd0c/mahesh-handicraft",
+    techStack: [
+      "Next.js",
+      "Server Actions",
+      "MongoDB",
+      "Nodemailer",
+      "shadcn/ui",
+      "Cloudinary",
+    ],
     live: "https://maheshhandicraft.com/",
   },
   {
@@ -369,7 +403,7 @@ const projects = [
       "A feature-rich movie discovery platform powered by comprehensive film databases. Explore movies and TV shows with detailed ratings, cast information, actor filmographies, trailers, and personalized recommendations. Your ultimate companion for finding the perfect watch.",
     image:
       "https://res.cloudinary.com/dscuiqkrh/image/upload/v1766340076/Portfolio/skull-movies_fuj6cm.webp",
-    techStack: ["React", "TypeScript", "Tailwind CSS"],
+    techStack: ["React-Native", "TypeScript", "Nativewind"],
     github: "https://github.com/m4dd0c/skullMovies",
     live: "https://github.com/m4dd0c/skullMovies/releases/tag/v1.0.0",
   },
@@ -383,7 +417,7 @@ const projects = [
       "https://res.cloudinary.com/dscuiqkrh/image/upload/v1764614600/coursebundler_zwsnds.webp",
     preview:
       "https://res.cloudinary.com/dscuiqkrh/video/upload/v1764614611/preview.coursebundler_kyopf0.mov",
-    techStack: ["Next.js", "TypeScript", "MongoDB"],
+    techStack: ["React", "JavaScript", "Express", "MongoDB"],
     github: "https://github.com/m4dd0c/courseBundler",
     live: "https://github.com/m4dd0c/courseBundler",
   },
