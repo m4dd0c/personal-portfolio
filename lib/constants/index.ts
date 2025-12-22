@@ -285,6 +285,8 @@ const projects = [
       "Next.js",
       "TurboRepo",
       "TypeScript",
+      "Razorpay",
+      "Mailtrap",
       "Shadcn/ui",
       "Tailwind CSS",
       "MongoDB",
