@@ -1,6 +1,6 @@
 import Image from "next/image";
 import HrText from "../ui/HrText";
-import { social_media } from "@/lib/constants";
+import { social_media, resume_url } from "@/lib/constants";
 import Link from "next/link";
 import { TextHoverEffect } from "../ui/text-hover-effect";
 import { IoArrowForward } from "react-icons/io5";
@@ -76,7 +76,7 @@ const Hero = () => {
               <a
                 target="_blank"
                 className="flex justify-center items-center z-1 rounded-4xl bg-black px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm/6 font-semibold text-white hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
-                href="https://drive.google.com/file/d/14CBB9zw6nGzN8tz6A0Hi4UYraq8R4PBe/view?usp=sharing"
+                href={resume_url}
               >
                 <span>Hire Me</span>&nbsp; <IoArrowForward />
               </a>{" "}

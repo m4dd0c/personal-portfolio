@@ -426,9 +426,12 @@ const projects = [
 ];
 
 const SITE_URL = "https://m4dd0c.com";
+const resume_url =
+  "https://drive.google.com/file/d/1pYKkuVLExjFJv5g8l9caqUVzAQMHQK53/view?usp=drive_link";
 export {
   social_media,
   SITE_URL,
+  resume_url,
   experiences,
   nonTechSkills,
   techSkills,
