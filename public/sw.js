@@ -1,9 +1,9 @@
-const CACHE_NAME = "m4dd0c-portfolio-v1";
-const OFFLINE_URL = "/~offline";
+const CACHE_NAME = "m4dd0c-portfolio-v2";
+const OFFLINE_URL = "/offline.html";
 
 const PRECACHE_ASSETS = [
   "/",
-  "/~offline",
+  "/offline.html",
   "/proof-of-work",
   "/blog",
 ];

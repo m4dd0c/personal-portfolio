@@ -13,7 +13,8 @@ const NetworkStatus = () => {
       toast.error("Connection lost", {
         description:
           "You appear to be offline. Some features may be unavailable.",
-        duration: 10000,  closeButton: true,
+        duration: 10000,
+        closeButton: true,
       });
       hasShownOfflineToast.current = true;
     } else if (isOnline) {
