@@ -41,6 +41,10 @@ import {
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
+const SITE_URL = "https://m4dd0c.com";
+const resume_url =
+  "https://drive.google.com/file/d/1qidC5nEfLy3NeP1qPoR-Oxr04QWmMjkZ/view?usp=sharing";
+
 const social_media: SocialMedia[] = [
   {
     label: "GitHub",
@@ -425,9 +429,6 @@ const projects = [
   },
 ];
 
-const SITE_URL = "https://m4dd0c.com";
-const resume_url =
-  "https://drive.google.com/file/d/1pYKkuVLExjFJv5g8l9caqUVzAQMHQK53/view?usp=drive_link";
 export {
   social_media,
   SITE_URL,
