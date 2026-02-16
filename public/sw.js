@@ -1,77 +1,71 @@
-const CACHE_NAME = "m4dd0c-portfolio-v2";
+const CACHE_NAME = "m4dd0c-portfolio-v3";
 const OFFLINE_URL = "/offline.html";
 
 const PRECACHE_ASSETS = [
   "/",
-  "/offline.html",
+  OFFLINE_URL,
   "/proof-of-work",
   "/blog",
 ];
 
-// Install event - precache important assets
+// INSTALL
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(PRECACHE_ASSETS);
-    })
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE_ASSETS))
   );
   self.skipWaiting();
 });
 
-// Activate event - clean up old caches
+// ACTIVATE
 self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
-        cacheNames
-          .filter((name) => name !== CACHE_NAME)
-          .map((name) => caches.delete(name))
-      );
-    })
+    caches.keys().then((keys) =>
+      Promise.all(
+        keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))
+      )
+    )
   );
   self.clients.claim();
 });
 
-// Fetch event - network first, fallback to cache, then offline page
+// FETCH
 self.addEventListener("fetch", (event) => {
-  // Only handle GET requests
   if (event.request.method !== "GET") return;
 
-  // Skip non-http(s) requests
-  if (!event.request.url.startsWith("http")) return;
+  const url = new URL(event.request.url);
 
+  // Ignore API routes
+  if (url.pathname.startsWith("/api")) return;
+
+  // Ignore Next.js build files (dev especially)
+  if (url.pathname.startsWith("/_next/")) return;
+
+  // Ignore external origins
+  if (url.origin !== self.location.origin) return;
+
+  // Handle navigation requests (HTML pages)
+  if (event.request.mode === "navigate") {
+    event.respondWith(
+      fetch(event.request).catch(() => caches.match(OFFLINE_URL))
+    );
+    return;
+  }
+
+  // Cache-first for static assets
   event.respondWith(
-    fetch(event.request)
-      .then((response) => {
-        // Clone and cache successful responses
-        if (response.status === 200) {
-          const responseClone = response.clone();
-          caches.open(CACHE_NAME).then((cache) => {
-            cache.put(event.request, responseClone);
-          });
-        }
-        return response;
-      })
-      .catch(async () => {
-        // Try to get from cache
-        const cachedResponse = await caches.match(event.request);
-        if (cachedResponse) {
-          return cachedResponse;
-        }
+    caches.match(event.request).then((cached) => {
+      if (cached) return cached;
 
-        // For navigation requests, show offline page
-        if (event.request.mode === "navigate") {
-          const offlineResponse = await caches.match(OFFLINE_URL);
-          if (offlineResponse) {
-            return offlineResponse;
-          }
-        }
+      return fetch(event.request).then((response) => {
+        if (!response || response.status !== 200) return response;
 
-        // Return a basic offline response
-        return new Response("Offline", {
-          status: 503,
-          statusText: "Service Unavailable",
+        const clone = response.clone();
+        caches.open(CACHE_NAME).then((cache) => {
+          cache.put(event.request, clone);
         });
-      })
+
+        return response;
+      });
+    })
   );
 });
