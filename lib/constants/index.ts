@@ -43,7 +43,7 @@ import { VscVscode } from "react-icons/vsc";
 
 const SITE_URL = "https://m4dd0c.com";
 const resume_url =
-  "https://drive.google.com/file/d/1qidC5nEfLy3NeP1qPoR-Oxr04QWmMjkZ/view?usp=sharing";
+  "https://drive.google.com/file/d/1i3UBuP8tTCATDfCtNmQvNlFZFexUBl-R/view?usp=sharing";
 
 const social_media: SocialMedia[] = [
   {
